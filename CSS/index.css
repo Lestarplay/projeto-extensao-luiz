@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wdth,wght@75,400..700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;   
+   font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row; 
+}
+
+.ladodireito,
+.ladoesquerdo {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ladodireito {
+    background-color: #FF879B;
+    gap: 50%;
+}
+
+.ladoesquerdo {
+    background-color: #fff;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    gap: 25px;
+}
+
+aside img {
+    height: 100px;
+    width: 200px;
+    margin: 50px;
+}
+
+button {
+    color: white;
+    background-color: #FF879B;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: medium;
+    margin-top: 20px;
+    border: #ffe4a9;
+    color: #ffe4a9;
+}
+input {
+    background: transparent;
+    background-color: #FF879B;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--color-white);
+    padding: 20px 70px 10px 10px;
+}
+
+.input-box input::placeholder {
+    color: var(--color-white);
+}
+
+.titulo h1 {
+    margin-top: 10%;
+}
+
+a {
+    color: #ffe4a9;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.37);
+}
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column; 
+        height: auto;
+        padding: 20px;
+    }
+
+    .ladodireito,
+    .ladoesquerdo {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .card {
+        width: 90%; 
+    }
+
+    button {
+        width: 120px; 
+    }
+
+    input {
+        width: 80%; 
+    }
+
+    aside img {
+        width: 150px; 
+        height: auto;
+        margin: 20px;
+    }
+
+    .titulo h1 {
+        font-size: 24px; 
+    }
+}
+@media screen and (max-width: 1024px) {
+    .ladodireito,
+    .ladoesquerdo {
+        width: 50%; 
+    }
+
+    button {
+        width: 130px; 
+    }
+
+    input {
+        width: 90%; 
+    }
+
+    .card {
+        width: 80%; 
+    }
+}
+@media screen and (min-width: 1200px) {
+    .card {
+        width: 50%; 
+    }
+}
+
